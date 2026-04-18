@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower Decoration | Sri Sai Events</title>
+  <!-- Local fonts (no Google Fonts CDN dependency) -->
+  <link rel="stylesheet" href="css/google-fonts.css" />
+  <!-- Local Font Awesome (no CDN dependency) -->
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="service-pages.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Sri Sai Events Logo" class="nav-logo-img" />
+        <span class="logo-text">Sri Sai Events</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#gallery" class="nav-link">Services</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+        <a href="index.html#contact" class="btn-outline-gold">Enquire Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link" onclick="closeMobile()">Home</a>
+      <a href="index.html#gallery" class="mobile-link" onclick="closeMobile()">Services</a>
+      <a href="index.html#contact" class="mobile-link" onclick="closeMobile()">Contact</a>
+      <a href="index.html#contact" class="btn-gold mobile-cta" onclick="closeMobile()">Enquire Now</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="images/flower-decoration/01.jpg" alt="Flower decoration by Sri Sai Events" />
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content container">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size:0.6rem"></i>
+        <a href="index.html#services">Services</a>
+        <i class="fa-solid fa-chevron-right" style="font-size:0.6rem"></i>
+        <span>Flower Decoration</span>
+      </nav>
+      <div class="page-hero-icon"><i class="fa-solid fa-seedling"></i></div>
+      <p class="section-eyebrow">Our Signature Service</p>
+      <h1 class="page-hero-title">Flower Decoration</h1>
+      <p class="page-hero-desc">Where nature meets elegance — transforming every venue into a breathtaking floral masterpiece.</p>
+      <a href="index.html#contact" class="btn-gold">Get a Free Quote</a>
+    </div>
+  </section>
+
+  <!-- OVERVIEW (with integrated gallery) -->
+  <section class="sp-overview section-pad">
+    <div class="container">
+      <div class="sp-overview-text fade-in" style="max-width: 54rem; margin: 0 auto 3rem;">
+        <p class="section-eyebrow">What We Offer</p>
+        <h2 class="section-title">Exquisite Florals for <span class="gold-italic">Every Occasion</span></h2>
+        <p class="sp-desc">At Sri Sai Events, flower decoration is not just a service — it is our passion. Our master decorators craft stunning floral arrangements using the freshest blooms, turning your vision into a living work of art. From intimate gatherings to grand celebrations, we bring nature's beauty to your special moment.</p>
+        <div class="sp-highlights">
+          <div class="sp-highlight-item"><i class="fa-solid fa-check"></i> Premium fresh flowers sourced daily</div>
+          <div class="sp-highlight-item"><i class="fa-solid fa-check"></i> Custom designs for every theme & budget</div>
+          <div class="sp-highlight-item"><i class="fa-solid fa-check"></i> Expert decorators with 4+ years experience</div>
+          <div class="sp-highlight-item"><i class="fa-solid fa-check"></i> Setup and clean-up included</div>
+        </div>
+      </div>
+
+      <!-- Gallery integrated into overview — dynamically populated from images/flower-decoration/ -->
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <p class="section-eyebrow fade-in">Our Work</p>
+        <h2 class="section-title fade-in delay-1">Glimpses of Our <span class="gold-italic">Floral Creations</span></h2>
+      </div>
+      <div class="sp-gallery-carousel" id="flower-gallery" data-image-folder="images/flower-decoration">
+        <!-- Slides injected by JavaScript -->
+        <button class="sgc-btn sgc-prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="sgc-btn sgc-next" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="sgc-dots"></div>
+        <span class="sgc-counter"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUB-SERVICES -->
+  <section class="sp-sub section-pad" style="background:var(--bg-alt)">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow fade-in">What's Included</p>
+        <h2 class="section-title fade-in delay-1">Our Flower Decoration <span class="gold-italic">Specialities</span></h2>
+      </div>
+      <div class="sub-services-grid">
+        <div class="sub-service-card fade-in">
+          <div class="ss-icon"><i class="fa-solid fa-archway"></i></div>
+          <h3 class="ss-name">Welcome Decoration</h3>
+          <p class="ss-desc">Grand floral welcome arches and entrance arrangements that set the tone for your entire event.</p>
+        </div>
+        <div class="sub-service-card fade-in delay-1">
+          <div class="ss-icon"><i class="fa-solid fa-car"></i></div>
+          <h3 class="ss-name">Car Decoration</h3>
+          <p class="ss-desc">Beautiful bridal car decorations with fresh flowers, ribbons, and bows for a fairytale arrival.</p>
+        </div>
+        <div class="sub-service-card fade-in delay-2">
+          <div class="ss-icon"><i class="fa-solid fa-star"></i></div>
+          <h3 class="ss-name">Stage & Mandap</h3>
+          <p class="ss-desc">Stunning stage backdrops and mandap floral designs for weddings and grand ceremonies.</p>
+        </div>
+        <div class="sub-service-card fade-in delay-3">
+          <div class="ss-icon"><i class="fa-solid fa-chair"></i></div>
+          <h3 class="ss-name">Table Centerpieces</h3>
+          <p class="ss-desc">Elegant floral centerpieces for dining tables, buffet counters, and reception tables.</p>
+        </div>
+        <div class="sub-service-card fade-in">
+          <div class="ss-icon"><i class="fa-solid fa-house"></i></div>
+          <h3 class="ss-name">Home & Venue Decoration</h3>
+          <p class="ss-desc">Complete home and venue floral transformations for all types of celebrations and functions.</p>
+        </div>
+        <div class="sub-service-card fade-in delay-1">
+          <div class="ss-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3 class="ss-name">Romantic Setups</h3>
+          <p class="ss-desc">Dreamy floral setups for proposals, anniversaries, and intimate romantic celebrations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sp-cta section-pad" style="background:var(--bg-alt)">
+    <div class="container">
+      <div class="sp-cta-card fade-in">
+        <div class="sp-cta-icon"><i class="fa-solid fa-seedling"></i></div>
+        <h2 class="section-title">Ready to Create Something <span class="gold-italic">Beautiful?</span></h2>
+        <p>Tell us your dream setup and we'll bring it to life with our finest flowers and expert artistry.</p>
+        <div class="sp-cta-btns">
+          <a href="https://wa.me/917338483892?text=Hi%20Sri%20Sai%20Events%2C%20I'm%20interested%20in%20Flower%20Decoration%20services." target="_blank" class="btn-submit-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+          <a href="mailto:kumarsaaho99@gmail.com?subject=Enquiry%20-%20Flower%20Decoration&body=Hi%20Sri%20Sai%20Events%2C%0A%0AI%20am%20interested%20in%20your%20Flower%20Decoration%20services.%0A%0APlease%20contact%20me." class="btn-submit-email"><i class="fa-solid fa-envelope"></i> Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="logo.png" alt="Sri Sai Events Logo" class="nav-logo-img" />
+            <span class="logo-text">Sri Sai Events</span>
+          </a>
+          <p class="footer-desc">Premium event management services. Specializing in exceptional floral designs and comprehensive event solutions.</p>
+          <p class="footer-tagline">"Life is an event, make it memorable."</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-list">
+            <li><a href="flower-decoration.html">Flower Decoration</a></li>
+            <li><a href="birthday-party.html">Birthday Party</a></li>
+            <li><a href="video-photography.html">Video Photography</a></li>
+            <li><a href="tent-house.html">Tent House &amp; Sound</a></li>
+            <li><a href="makeup-artist.html">Makeup Artist</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-list">
+            <li><a href="tel:+917338483892">+91 73384 83892</a></li>
+            <li><a href="tel:+919945314345">+91 99453 14345</a></li>
+            <li><a href="mailto:kumarsaaho99@gmail.com">kumarsaaho99@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Sri Sai Events. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/917338483892" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/srisaievents143/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@SriSaievents143/shorts" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <a href="https://www.youtube.com/@SriSaievents143/shorts" target="_blank" class="float-btn float-yt" aria-label="YouTube"><i class="fa-brands fa-youtube"></i><span class="float-tooltip">Our YouTube</span></a>
+  <a href="https://www.instagram.com/srisaievents143/" target="_blank" class="float-btn float-insta" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span class="float-tooltip">Follow on Instagram</span></a>
+  <a href="https://wa.me/917338483892" target="_blank" class="float-btn float-wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span class="float-tooltip">Chat on WhatsApp</span></a>
+
+  <script src="script.js"></script>
+</body>
+</html>

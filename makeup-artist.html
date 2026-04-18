@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Makeup Artist | Sri Sai Events</title>
+  <!-- Local fonts (no Google Fonts CDN dependency) -->
+  <link rel="stylesheet" href="css/google-fonts.css" />
+  <!-- Local Font Awesome (no CDN dependency) -->
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="service-pages.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="logo.png" alt="Sri Sai Events Logo" class="nav-logo-img" />
+        <span class="logo-text">Sri Sai Events</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#gallery" class="nav-link">Services</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+        <a href="index.html#contact" class="btn-outline-gold">Enquire Now</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link" onclick="closeMobile()">Home</a>
+      <a href="index.html#gallery" class="mobile-link" onclick="closeMobile()">Services</a>
+      <a href="index.html#contact" class="mobile-link" onclick="closeMobile()">Contact</a>
+      <a href="index.html#contact" class="btn-gold mobile-cta" onclick="closeMobile()">Enquire Now</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="images/makeup-artist/01.jpg" alt="Professional makeup artist" />
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content container">
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right" style="font-size:0.6rem"></i>
+        <a href="index.html#services">Services</a>
+        <i class="fa-solid fa-chevron-right" style="font-size:0.6rem"></i>
+        <span>Makeup Artist</span>
+      </nav>
+      <div class="page-hero-icon"><i class="fa-solid fa-face-smile"></i></div>
+      <p class="section-eyebrow">Beauty &amp; Glamour</p>
+      <h1 class="page-hero-title">Makeup Artist</h1>
+      <p class="page-hero-desc">Beauty that tells your story — professional makeup artistry to make you look and feel your absolute best.</p>
+      <a href="index.html#contact" class="btn-gold">Book a Makeup Artist</a>
+    </div>
+  </section>
+
+  <!-- OVERVIEW (with integrated gallery) -->
+  <section class="sp-overview section-pad">
+    <div class="container">
+      <div class="sp-overview-text fade-in" style="max-width: 54rem; margin: 0 auto 3rem;">
+        <p class="section-eyebrow">Professional Artistry</p>
+        <h2 class="section-title">Flawless Looks for Every <span class="gold-italic">Special Occasion</span></h2>
+        <p class="sp-desc">Our professional makeup artists are trained in the latest techniques and use only premium, skin-safe products. Whether you're the bride, a bridesmaid, or a guest at any celebration, we ensure you look picture-perfect. We offer on-site services at your home or venue — so you can relax while we take care of everything.</p>
+        <div class="sp-highlights">
+          <div class="sp-highlight-item"><i class="fa-solid fa-check"></i> Trained professional makeup artists</div>
+          <div class="sp-highlight-item"><i class="fa-solid fa-check"></i> Premium & skin-safe products used</div>
+          <div class="sp-highlight-item"><i class="fa-solid fa-check"></i> On-site home or venue service</div>
+          <div class="sp-highlight-item"><i class="fa-solid fa-check"></i> Custom look tailored to your style</div>
+        </div>
+      </div>
+
+      <!-- Gallery integrated into overview — dynamically populated from images/makeup-artist/ -->
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <p class="section-eyebrow fade-in">Our Work</p>
+        <h2 class="section-title fade-in delay-1">Beauty <span class="gold-italic">Transformations</span></h2>
+      </div>
+      <div class="sp-gallery-carousel" id="makeup-gallery" data-image-folder="images/makeup-artist">
+        <!-- Slides injected by JavaScript -->
+        <button class="sgc-btn sgc-prev" aria-label="Previous slide"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="sgc-btn sgc-next" aria-label="Next slide"><i class="fa-solid fa-chevron-right"></i></button>
+        <div class="sgc-dots"></div>
+        <span class="sgc-counter"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUB-SERVICES -->
+  <section class="sp-sub section-pad" style="background:var(--bg-alt)">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow fade-in">Our Specialities</p>
+        <h2 class="section-title fade-in delay-1">Professional Makeup <span class="gold-italic">Services</span></h2>
+      </div>
+      <div class="sub-services-grid">
+        <div class="sub-service-card fade-in">
+          <div class="ss-icon"><i class="fa-solid fa-crown"></i></div>
+          <h3 class="ss-name">Bridal Makeup</h3>
+          <p class="ss-desc">Stunning bridal looks crafted to last all day — traditional, contemporary, or fusion styles tailored to match your wedding theme.</p>
+          <ul class="ss-list">
+            <li>Traditional South Indian bridal</li>
+            <li>Contemporary &amp; fusion styles</li>
+            <li>Long-lasting formulas</li>
+            <li>Pre-bridal consultation</li>
+          </ul>
+        </div>
+        <div class="sub-service-card fade-in delay-1">
+          <div class="ss-icon"><i class="fa-solid fa-star"></i></div>
+          <h3 class="ss-name">Party Makeup</h3>
+          <p class="ss-desc">Glamorous party-ready looks for receptions, sangeet nights, cocktail parties, and any festive celebration.</p>
+          <ul class="ss-list">
+            <li>Reception &amp; sangeet looks</li>
+            <li>Glam evening makeup</li>
+            <li>Festival &amp; themed looks</li>
+            <li>Quick party touch-ups</li>
+          </ul>
+        </div>
+        <div class="sub-service-card fade-in delay-2">
+          <div class="ss-icon"><i class="fa-solid fa-spray-can-sparkles"></i></div>
+          <h3 class="ss-name">HD &amp; Airbrush Makeup</h3>
+          <p class="ss-desc">Flawless, camera-ready finish using HD and airbrush techniques — lightweight, breathable, and perfect for photography.</p>
+          <ul class="ss-list">
+            <li>Airbrush foundation &amp; contouring</li>
+            <li>HD camera-ready finish</li>
+            <li>Long-wear &amp; transfer-proof</li>
+            <li>Ideal for video &amp; photography</li>
+          </ul>
+        </div>
+        <div class="sub-service-card fade-in delay-3">
+          <div class="ss-icon"><i class="fa-solid fa-person"></i></div>
+          <h3 class="ss-name">Groom Grooming</h3>
+          <p class="ss-desc">Professional grooming for grooms — clean skin prep, light foundation, hair styling, and beard grooming for a sharp, polished look.</p>
+          <ul class="ss-list">
+            <li>Skin prep &amp; moisturizing</li>
+            <li>Light foundation &amp; concealer</li>
+            <li>Beard shaping &amp; grooming</li>
+            <li>Hair styling &amp; setting</li>
+          </ul>
+        </div>
+        <div class="sub-service-card fade-in">
+          <div class="ss-icon"><i class="fa-solid fa-scissors"></i></div>
+          <h3 class="ss-name">Hair Styling</h3>
+          <p class="ss-desc">Professional hair styling for all occasions — from elegant updos and braids to soft curls and blow-dry finishes.</p>
+          <ul class="ss-list">
+            <li>Traditional &amp; modern updos</li>
+            <li>Braids &amp; floral hair styling</li>
+            <li>Curls, waves &amp; blowouts</li>
+            <li>Hair accessories pinning</li>
+          </ul>
+        </div>
+        <div class="sub-service-card fade-in delay-1">
+          <div class="ss-icon"><i class="fa-solid fa-hands"></i></div>
+          <h3 class="ss-name">Saree Draping</h3>
+          <p class="ss-desc">Expert saree draping in various regional styles — Bengali, Nivi, Gujarati, Maharashtrian — making you look elegant and graceful.</p>
+          <ul class="ss-list">
+            <li>All regional draping styles</li>
+            <li>Silk &amp; designer sarees</li>
+            <li>Neat &amp; secure pleating</li>
+            <li>Blouse pinning &amp; pallu styling</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="sp-cta section-pad" style="background:var(--bg-alt)">
+    <div class="container">
+      <div class="sp-cta-card fade-in">
+        <div class="sp-cta-icon"><i class="fa-solid fa-face-smile"></i></div>
+        <h2 class="section-title">Ready to Look <span class="gold-italic">Absolutely Stunning?</span></h2>
+        <p>Book our professional makeup artists and hair stylists for your next celebration.</p>
+        <div class="sp-cta-btns">
+          <a href="https://wa.me/917338483892?text=Hi%20Sri%20Sai%20Events%2C%20I'm%20interested%20in%20Makeup%20Artist%20services." target="_blank" class="btn-submit-wa"><i class="fa-brands fa-whatsapp"></i> WhatsApp Us</a>
+          <a href="mailto:kumarsaaho99@gmail.com?subject=Enquiry%20-%20Makeup%20Artist&body=Hi%20Sri%20Sai%20Events%2C%0A%0AI%20am%20interested%20in%20your%20Makeup%20Artist%20services.%0A%0APlease%20contact%20me." class="btn-submit-email"><i class="fa-solid fa-envelope"></i> Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img src="logo.png" alt="Sri Sai Events Logo" class="nav-logo-img" />
+            <span class="logo-text">Sri Sai Events</span>
+          </a>
+          <p class="footer-desc">Premium event management services. Specializing in exceptional floral designs and comprehensive event solutions.</p>
+          <p class="footer-tagline">"Life is an event, make it memorable."</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-list">
+            <li><a href="flower-decoration.html">Flower Decoration</a></li>
+            <li><a href="birthday-party.html">Birthday Party</a></li>
+            <li><a href="video-photography.html">Video Photography</a></li>
+            <li><a href="tent-house.html">Tent House &amp; Sound</a></li>
+            <li><a href="makeup-artist.html">Makeup Artist</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-list">
+            <li><a href="tel:+917338483892">+91 73384 83892</a></li>
+            <li><a href="tel:+919945314345">+91 99453 14345</a></li>
+            <li><a href="mailto:kumarsaaho99@gmail.com">kumarsaaho99@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Sri Sai Events. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/917338483892" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/srisaievents143/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@SriSaievents143/shorts" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BUTTONS -->
+  <a href="https://www.youtube.com/@SriSaievents143/shorts" target="_blank" class="float-btn float-yt" aria-label="YouTube"><i class="fa-brands fa-youtube"></i><span class="float-tooltip">Our YouTube</span></a>
+  <a href="https://www.instagram.com/srisaievents143/" target="_blank" class="float-btn float-insta" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span class="float-tooltip">Follow on Instagram</span></a>
+  <a href="https://wa.me/917338483892" target="_blank" class="float-btn float-wa" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span class="float-tooltip">Chat on WhatsApp</span></a>
+
+  <script src="script.js"></script>
+</body>
+</html>

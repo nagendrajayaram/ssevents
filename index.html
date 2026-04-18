@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sri Sai Events – Premium event management company specializing in Flower Decoration, Birthday Parties, Magic Shows, and more. Life is an event, make it memorable." />
+  <title>Sri Sai Events | Life is an event, make it memorable</title>
+  <!-- Local fonts (no Google Fonts CDN dependency) -->
+  <link rel="stylesheet" href="css/google-fonts.css" />
+  <!-- Local Font Awesome (no CDN dependency) -->
+  <link rel="stylesheet" href="css/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="service-pages.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ NAVBAR -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="nav-logo" onclick="scrollTo('home')">
+        <img src="logo.png" alt="Sri Sai Events Logo" class="nav-logo-img" />
+        <span class="logo-text">Sri Sai Events</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home"     class="nav-link" onclick="scrollTo('home')">Home</a>
+        <a href="#about"    class="nav-link" onclick="scrollTo('about')">About</a>
+        <a href="#gallery"  class="nav-link" onclick="scrollTo('gallery')">Services</a>
+        <a href="#contact"  class="nav-link" onclick="scrollTo('contact')">Contact</a>
+        <a href="#contact"  class="btn-outline-gold" onclick="scrollTo('contact')">Enquire Now</a>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#home"     class="mobile-link" onclick="closeMobile();scrollTo('home')">Home</a>
+      <a href="#about"    class="mobile-link" onclick="closeMobile();scrollTo('about')">About</a>
+      <a href="#gallery"  class="mobile-link" onclick="closeMobile();scrollTo('gallery')">Services</a>
+      <a href="#contact"  class="mobile-link" onclick="closeMobile();scrollTo('contact')">Contact</a>
+      <a href="#contact"  class="btn-gold mobile-cta" onclick="closeMobile();scrollTo('contact')">Enquire Now</a>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════ HERO -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <!-- Local image (no online dependency) -->
+      <img src="images/hero-bg.jpg"
+           alt="Grand Indian event stage" class="hero-bg-img" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content container">
+      <div class="hero-logo animate-in">
+        <img src="logo.png" alt="Sri Sai Events Logo" class="hero-brand-img" />
+      </div>
+
+      <p class="hero-eyebrow animate-in delay-1">Premium Event Management</p>
+
+      <h1 class="hero-title animate-in delay-2">
+        Life is an event,<br />
+        <span class="gold-italic">make it memorable.</span>
+      </h1>
+
+      <div class="hero-cta animate-in delay-3">
+        <a href="#services" class="btn-gold" onclick="scrollTo('services')">Explore Services</a>
+        <a href="#contact"  class="btn-ghost-gold" onclick="scrollTo('contact')">Plan Your Event</a>
+      </div>
+    </div>
+
+    <div class="scroll-indicator animate-in delay-4">
+      <span class="scroll-label">Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ ABOUT -->
+  <section id="about" class="about section-pad">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-img-wrap fade-in">
+          <div class="about-img-frame">
+            <div class="about-img-overlay"></div>
+            <!-- Local image (no online dependency) -->
+            <img src="images/about-event.jpg"
+                 alt="Elegant Indian wedding event setup" class="about-img" />
+          </div>
+          <div class="founded-badge">
+            <span class="founded-year">2012</span>
+            <span class="founded-label">Founded</span>
+          </div>
+        </div>
+
+        <div class="about-text fade-in delay-1">
+          <p class="section-eyebrow">About Us</p>
+          <h2 class="section-title">
+            Crafting <span class="gold-italic">Magical Moments</span><br />Since 2012
+          </h2>
+
+          <div class="about-body">
+            <p>Based in India, Sri Sai Events is a premium event management company dedicated to turning your dreams into reality. Founded by Kumar Saaho, we believe that every celebration should be a reflection of your unique story.</p>
+            <p>We are renowned for our exquisite flower decorations, bringing joy, elegance, and a touch of grandeur to every occasion. Whether it's an intimate birthday gathering or a grand celebration, our team handles every detail with meticulous care.</p>
+          </div>
+
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-icon"><i class="fa-regular fa-clock"></i></div>
+              <div>
+                <h4 class="stat-value">12+</h4>
+                <p class="stat-label">Years Experience</p>
+              </div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+              <div>
+                <h4 class="stat-value">800+</h4>
+                <p class="stat-label">Events Planned</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ GALLERY -->
+  <section id="gallery" class="gallery section-pad">
+    <div class="container">
+      <div class="gallery-header">
+        <div>
+          <p class="section-eyebrow fade-in">Portfolio</p>
+          <h2 class="section-title fade-in delay-1">
+            A Glimpse Into Our <span class="gold-italic">Magical Creations</span>
+          </h2>
+        </div>
+        <div class="gallery-social fade-in delay-2">
+          <a href="https://www.instagram.com/srisaievents143/" target="_blank" rel="noopener noreferrer" class="btn-ghost-gold">
+            <i class="fa-brands fa-instagram"></i> Instagram
+          </a>
+          <a href="https://www.youtube.com/@SriSaievents143/shorts" target="_blank" rel="noopener noreferrer" class="btn-ghost-red">
+            <i class="fa-brands fa-youtube"></i> YouTube
+          </a>
+        </div>
+      </div>
+
+      <!--
+        PORTFOLIO — click any tile to visit that service page.
+        Images stored in images/ folder — swap files to update.
+      -->
+
+      <!-- Row 1: 3 services -->
+      <div class="gallery-grid-top">
+        <a href="flower-decoration.html" class="gallery-item fade-in">
+          <img src="images/flower-decoration.jpg" alt="Flower decoration by Sri Sai Events" />
+          <div class="gallery-overlay">
+            <div class="gallery-category"><i class="fa-solid fa-seedling"></i> Flower Decoration</div>
+            <div class="gallery-bar"></div>
+            <h4 class="gallery-title">Flower Decoration</h4>
+            <span class="gallery-cta">View Service <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="birthday-party.html" class="gallery-item fade-in delay-1">
+          <img src="images/birthday-event.jpg" alt="Birthday party by Sri Sai Events" />
+          <div class="gallery-overlay">
+            <div class="gallery-category"><i class="fa-solid fa-cake-candles"></i> Birthday Party</div>
+            <div class="gallery-bar"></div>
+            <h4 class="gallery-title">Birthday Party</h4>
+            <span class="gallery-cta">View Service <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="tent-house.html" class="gallery-item fade-in delay-2">
+          <img src="images/grand-stage.jpg" alt="Tent house and stage by Sri Sai Events" />
+          <div class="gallery-overlay">
+            <div class="gallery-category"><i class="fa-solid fa-tent"></i> Tent House &amp; Sound</div>
+            <div class="gallery-bar"></div>
+            <h4 class="gallery-title">Tent House & Sound</h4>
+            <span class="gallery-cta">View Service <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Row 2: 2 larger services -->
+      <div class="gallery-grid-bottom">
+        <a href="video-photography.html" class="gallery-item fade-in delay-1">
+          <img src="images/video-photography.jpg" alt="Video photography by Sri Sai Events" />
+          <div class="gallery-overlay">
+            <div class="gallery-category"><i class="fa-solid fa-camera"></i> Video Photography</div>
+            <div class="gallery-bar"></div>
+            <h4 class="gallery-title">Video Photography</h4>
+            <span class="gallery-cta">View Service <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+        <a href="makeup-artist.html" class="gallery-item fade-in delay-2">
+          <img src="images/makeup-artist.jpg" alt="Makeup artist by Sri Sai Events" />
+          <div class="gallery-overlay">
+            <div class="gallery-category"><i class="fa-solid fa-face-smile"></i> Makeup Artist</div>
+            <div class="gallery-bar"></div>
+            <h4 class="gallery-title">Makeup Artist</h4>
+            <span class="gallery-cta">View Service <i class="fa-solid fa-arrow-right"></i></span>
+          </div>
+        </a>
+      </div>
+
+      <div class="gallery-view-more fade-in">
+        <a href="https://www.instagram.com/srisaievents143/" target="_blank" rel="noopener noreferrer" class="btn-ghost-gold">
+          <i class="fa-brands fa-instagram"></i> View Our Full Portfolio on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ CONTACT -->
+  <section id="contact" class="contact section-pad">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info fade-in">
+          <p class="section-eyebrow">Get in Touch</p>
+          <h2 class="section-title">
+            Let's Plan Your <br /><span class="gold-italic">Dream Event</span>
+          </h2>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <p class="contact-label">Call Us</p>
+                <a href="tel:+917338483892" class="contact-value contact-mono">+91 7338483892</a>
+                <a href="tel:+919945314345" class="contact-value contact-mono">+91 9945314345</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:kumarsaaho99@gmail.com" class="contact-value contact-mono">kumarsaaho99@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <p class="contact-label">Contact Person</p>
+                <p class="contact-value contact-mono">Kumar Saaho (Event Planner)</p>
+                <p class="contact-sub">Based in India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://wa.me/917338483892" target="_blank" rel="noopener noreferrer" class="social-btn whatsapp-btn" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/srisaievents143/" target="_blank" rel="noopener noreferrer" class="social-btn insta-btn" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@SriSaievents143/shorts" target="_blank" rel="noopener noreferrer" class="social-btn yt-btn" aria-label="YouTube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap fade-in delay-2">
+          <div class="form-card">
+            <h3 class="form-title">Send an Enquiry</h3>
+
+            <form id="enquiryForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" id="name" name="name" required placeholder="John Doe" />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="event">Event Type</label>
+                  <select id="event" name="event">
+                    <option value="">Select Event Type</option>
+                    <option value="Wedding / Reception">Wedding / Reception</option>
+                    <option value="Birthday Party">Birthday Party</option>
+                    <option value="Corporate Event">Corporate Event</option>
+                    <option value="Other Celebration">Other Celebration</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="date">Event Date (Approx)</label>
+                  <input type="date" id="date" name="date" onclick="this.showPicker ? this.showPicker() : this.focus()" onfocus="this.showPicker ? this.showPicker() : null" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message / Requirements</label>
+                <textarea id="message" name="message" rows="4" required placeholder="Tell us about your dream event..."></textarea>
+              </div>
+
+              <!-- Dual submit buttons -->
+              <div class="submit-options">
+                <button type="button" class="btn-submit-wa" onclick="sendViaWhatsApp()">
+                  <i class="fa-brands fa-whatsapp"></i> Send via WhatsApp
+                </button>
+                <button type="button" class="btn-submit-email" onclick="sendViaEmail()">
+                  <i class="fa-solid fa-envelope"></i> Send via Email
+                </button>
+              </div>
+            </form>
+
+            <div class="form-success" id="formSuccess">
+              <i class="fa-solid fa-circle-check"></i>
+              <p>Redirecting you to send your enquiry...</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo" onclick="scrollTo('home')">
+            <img src="logo.png" alt="Sri Sai Events Logo" class="nav-logo-img" />
+            <span class="logo-text">Sri Sai Events</span>
+          </a>
+          <p class="footer-desc">Premium event management services. We specialize in bringing your dreams to life through exceptional floral designs and comprehensive event solutions.</p>
+          <p class="footer-tagline">"Life is an event, make it memorable."</p>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-list">
+            <li><a href="#home"     onclick="scrollTo('home')">Home</a></li>
+            <li><a href="#about"    onclick="scrollTo('about')">About</a></li>
+            <li><a href="#gallery"  onclick="scrollTo('gallery')">Services</a></li>
+            <li><a href="#contact"  onclick="scrollTo('contact')">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4 class="footer-heading">Popular Services</h4>
+          <ul class="footer-list">
+           <li><a href="flower-decoration.html">Flower Decoration</a></li>
+            <li><a href="birthday-party.html">Birthday Party</a></li>
+            <li><a href="video-photography.html">Video Photography</a></li>
+            <li><a href="tent-house.html">Tent House &amp; Sound</a></li>
+            <li><a href="makeup-artist.html">Makeup Artist</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Sri Sai Events. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="https://wa.me/917338483892" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="https://www.instagram.com/srisaievents143/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/@SriSaievents143/shorts" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════ FLOATING BUTTONS -->
+  <!-- YouTube -->
+  <a href="https://www.youtube.com/@SriSaievents143/shorts" target="_blank" rel="noopener noreferrer"
+     class="float-btn float-yt" aria-label="Visit our YouTube">
+    <i class="fa-brands fa-youtube"></i>
+    <span class="float-tooltip">Our YouTube</span>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/srisaievents143/" target="_blank" rel="noopener noreferrer"
+     class="float-btn float-insta" aria-label="Follow us on Instagram">
+    <i class="fa-brands fa-instagram"></i>
+    <span class="float-tooltip">Follow on Instagram</span>
+  </a>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/917338483892" target="_blank" rel="noopener noreferrer"
+     class="float-btn float-wa" aria-label="Chat on WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="float-tooltip">Chat on WhatsApp</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
