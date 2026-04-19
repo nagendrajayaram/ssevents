@@ -230,7 +230,7 @@ function showSuccessAndOpen(url) {
     };
 
     const altList = altLabels[folder] || [];
-    const MAX_IMAGES = 20;
+    const MAX_IMAGES = 25;
     let loaded = [];
     let pending = 0;
 
